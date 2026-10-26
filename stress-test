@@ -1,0 +1,49 @@
+# Stress Test do Design System Customizado
+
+Tokens da marca já aplicados:
+- Cores principais: {CORES_PRINCIPAIS_EM_HEX}
+- Cores customizadas: {EX: WARNING, WARNING-CONTAINER}
+- Tipografia: títulos em {FONTE_HEADER}, texto em {FONTE_BODY}
+- Logo: componente com as variantes de tema
+
+## Objetivo
+Usar a página já criada com o nome "Stress Test" para validar visualmente se o DS foi customizado corretamente antes de gerarmos as telas do produto.
+
+## Regra principal
+Use exclusivamente componentes da biblioteca customizada. Não desenhe componentes à mão nem invente variantes que não existem na biblioteca.
+
+## Seções obrigatórias
+1. Color roles: swatches de 160 × 80 px com nome do role e hex, agrupados em Primary, Secondary, Tertiary, Surface, Outline, Error e cores customizadas (com seus pares on- e container).
+2. Type ramp: todos os níveis (display, headline, title, body, label e estilos customizados) com nome, tamanho e altura de linha em px. Texto real do domínio de {NOME_DO_CLIENTE}, sem lorem ipsum.
+3. Botões: filled, tonal, outlined, text, FAB, extended FAB e icon button, nos estados default, hover, focused, pressed e disabled.
+4. Inputs: text field outlined e filled, nos estados default, focused, preenchido, erro com helper text e disabled, com e sem ícones.
+5. Cards: elevated, filled e outlined, com título, texto curto, imagem placeholder e dois botões.
+6. Navegação: top app bar (small, center-aligned, medium, large), navigation bar, navigation rail e navigation drawer.
+7. Chips: assist, filter (selecionado e não), input e suggestion.
+8. Seleção: switch, checkbox e radio em todos os estados.
+9. Feedback: progress linear e circular, snackbar, banner, badge e tags de status (sucesso, alerta, erro, informação, neutro).
+10. Espaçamento: a escala das variáveis do arquivo, em blocos com o valor em px.
+11. Raios: um card para cada valor da coleção Shape do arquivo, com o valor em px.
+12. Elevação: um card por nível (0 a 5).
+13. Logo: todas as variantes de tema sobre os fundos em que serão usadas.
+14. Ícones: amostra dos Material Symbols usados no projeto, nas cores dos tokens.
+
+## Organização da página
+- Cada seção num frame com título em title-large e fundo surface.
+- Grid de 12 colunas, gutter de 24 px, 80 px entre seções.
+- Cada componente com um label em label-medium acima, com o nome técnico (ex.: "Button / Filled / Default").
+- Versão light. Se o DS tiver tema escuro, duplique a página com o sufixo [Dark].
+
+## Auto-validação antes de responder
+1. Todos os componentes vieram da biblioteca, sem desenho manual?
+2. Todas as cores são os tokens da marca, e não as cores padrão do Material Design 3?
+3. As fontes são {FONTE_HEADER} e {FONTE_BODY}, sem fallback?
+4. Cada componente tem seu nome técnico?
+5. Nenhuma seção ficou faltando?
+
+## Responda com
+1. Confirmação de que a página foi criada.
+2. Resumo do que entrou em cada seção.
+3. Lista de inconsistências: componentes que não estavam na biblioteca, tokens que não bateram, cores padrão do Material Design 3 ainda aparecendo, fontes em fallback, divergências entre o que está na página e o valor da variável.
+
+O item 3 é o mais importante. Não conserte nada em silêncio: reporte para eu decidir.
