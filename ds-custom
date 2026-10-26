@@ -19,7 +19,9 @@ Você está conectado via MCP ao arquivo Figma siga as instruções descritas no
 2. Toda cor, fonte, raio e espaçamento deve existir como variável ou estilo. Nada de valor solto.
 3. Se o cliente já tem um DS ou guia, ele prevalece sobre os padrões do Material Design 3.
 4. Onde o material do cliente estiver incompleto, proponha um valor e marque como SUGESTÃO.
-5. Não aplique nada antes da minha aprovação da Fase 1.
+5. Substitua as cores e fontes do Material Design para as definidas pelo material do cliente e o que não vamos usar (cores e tipografia) pode ser apagado.
+6. Criar os componentes do logotipo e suas variações na página "Marca".
+7. Não aplique nada antes da minha aprovação da Fase 1.
 
 ## Fase 1 · Proposta (não alterar o arquivo)
 Me devolva uma proposta de mapeamento em tabelas:
