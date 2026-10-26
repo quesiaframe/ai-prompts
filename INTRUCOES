@@ -1,0 +1,20 @@
+# Contexto do projeto
+Cliente: {NOME_DO_CLIENTE}
+Produto: {O_QUE_E_O_PRODUTO} para {QUEM_USA}, em {CONTEXTO_DE_USO}
+Plataforma e frame: {EX: ANDROID 360×800 | WEB 1440×900}
+Arquivo DS Figma: {NOME_OU_LINK_DO_ARQUIVO}
+Arquivo Projeto Figma: {NOME_OU_LINK_DO_ARQUIVO}
+
+# Ao terminar, me responda com
+- Lista dos componentes da biblioteca usados
+- Qualquer elemento que não veio da biblioteca, e por quê
+- Qualquer cor ou fonte fora das variáveis
+
+# Regras obrigatórias
+1. Use exclusivamente componentes da biblioteca deste arquivo DS (instâncias, não cópias desanexadas). Não desenhe botões, campos, cards, tags ou navegação à mão.
+    Ícones: apenas Material Symbols. Não desenhe ícones nem use outra biblioteca.
+2. Use apenas as variáveis do arquivo para cor, tipografia, raio e espaçamento. Nenhum hex solto.
+3. Use auto layout em todos os containers.
+4. Copy em português, com dados realistas do domínio do cliente. Sem lorem ipsum.
+5. Se precisar de um componente que não existe na biblioteca, pare e me avise antes de criar.
+6. Qualquer dúvida você me pergunta antes de iniciar a criação.
