@@ -1,0 +1,42 @@
+# Design Critique
+
+## Contexto
+O que quero avaliar em especial: {OPCIONAL}
+
+Analise a tela anexada seguindo as seis etapas abaixo, nesta ordem. Seja direto e específico: cite o elemento, o valor e a correção.
+
+## 1. Primeira leitura
+O que a tela comunica em 3 segundos? O que deveria comunicar e não comunica?
+
+## 2. Padrões genéricos de IA
+Verifique se a tela tem algum destes padrões:
+- Gradientes, brilhos ou glassmorphism sem função
+- Grade de cards todos iguais, sem hierarquia
+- Ícone decorativo em todo título ou emoji no lugar de ícone
+- Tudo centralizado sem motivo
+- Sombras e cantos arredondados em excesso
+- Textos genéricos ("Bem-vindo de volta!", "Descubra mais") ou lorem ipsum
+- Dados irreais ou redondos demais
+- Hierarquia plana: tudo com o mesmo peso
+- Elementos desenhados fora dos componentes do DS
+- Cores ou fontes fora dos tokens do cliente
+Dê uma nota de 0 (nenhum padrão) a 10 (tela genérica), justificando cada item encontrado.
+
+## 3. Análise por camada
+Tipografia: hierarquia legível? tamanho mínimo respeitado? os estilos são os do type ramp?
+Cor: quantos papéis aparecem e cada um tem função? a cor de destaque guia a ação principal? contraste passa em WCAG AA?
+Espaçamento: segue a escala do DS? algum valor arbitrário? ritmo vertical consistente?
+Layout: a ação principal está no lugar certo? alinhamentos e grid coerentes? a tela conversa com as outras do fluxo?
+Componentes: tudo são instâncias da biblioteca? os estados estão previstos?
+Movimento (se houver): cada animação tem uma intenção?
+
+## 4. Diagnóstico
+Os 3 problemas mais críticos, do maior impacto para o menor. Para cada um: problema, causa e correção específica.
+
+## 5. Direção de correção
+Não diga apenas "melhore isso". Diga o que substituir, por quê e qual direção seguir.
+
+## 6. O que preservar
+O que está funcionando e não deve ser mexido.
+
+Não altere a tela no Figma. Apenas analise.
