@@ -1,0 +1,45 @@
+# Customização do Design System para o cliente
+
+## Contexto
+Você está conectado via MCP ao arquivo Figma siga as instruções descritas no Claude sobre o cliente e customize este arquivo com a identidade do cliente. Esse arquivo é uma copia do Material Design 3 do Google.
+
+## Material do cliente
+- Cores da marca (hex e papel de cada uma): {CORES}
+- Cores com significado fixo (sucesso, alerta, erro, informação): {CORES_SEMANTICAS}
+- Fonte de títulos: {FONTE_HEADER}
+- Fonte de texto: {FONTE_BODY}
+- Logo e variações: {LOGO_E_VARIACOES}
+- Estilo de forma (cantos retos, arredondados, pill): {ESTILO_DE_FORMA}
+- Tema escuro: {SIM | NAO}
+- Design system ou guia que o cliente já tenha: {LINK_OU_NAO_TEM}
+- Observações do cliente: {OBSERVACOES}
+
+## Regras
+1. Não altere a estrutura dos componentes do Material Design 3. Customize apenas variáveis, estilos e o componente de logo. Os ícones continuam sendo os Material Symbols da base.
+2. Toda cor, fonte, raio e espaçamento deve existir como variável ou estilo. Nada de valor solto.
+3. Se o cliente já tem um DS ou guia, ele prevalece sobre os padrões do Material Design 3.
+4. Onde o material do cliente estiver incompleto, proponha um valor e marque como SUGESTÃO.
+5. Não aplique nada antes da minha aprovação da Fase 1.
+
+## Fase 1 · Proposta (não alterar o arquivo)
+Me devolva uma proposta de mapeamento em tabelas:
+
+1. Color roles do modo Light: primary, on-primary, primary-container, on-primary-container, secondary (e pares), tertiary (e pares), error (e pares), surface e containers, on-surface, on-surface-variant, outline, outline-variant, inverse. Para cada role: hex proposto, de qual cor da marca derivou e se é do cliente ou SUGESTÃO.
+2. Cores customizadas que o Material Design 3 não tem, mas o produto precisa (ex.: warning, warning-container, on-warning-container), com o motivo.
+3. Contraste WCAG de cada par texto e fundo (on-X sobre X), indicando os que não passam em AA.
+4. Tipografia: fonte e peso para cada nível do type ramp (display, headline, title, body, label), mantendo tamanhos e alturas de linha do Material Design 3, salvo pedido do cliente.
+5. Forma: valores da coleção Shape (raios) e quais componentes usam cada um.
+6. Logo: como o componente de logo ficará organizado (variantes de tema).
+7. Tema escuro, se pedido: mesmo formato do item 1.
+8. Dúvidas e pontos que dependem de decisão do designer.
+
+## Fase 2 · Aplicação (só depois do meu ok)
+Aplique o mapeamento aprovado nas variáveis e estilos do arquivo, crie as cores customizadas como variáveis na mesma coleção e atualize o componente de logo.
+
+## Ao terminar a Fase 2, me responda com
+- O que foi alterado, por categoria
+- Variáveis criadas
+- Qualquer componente que ainda mostre cor ou fonte padrão do Material Design 3
+- Qualquer coisa que não conseguiu aplicar
+
+Não conserte nada em silêncio: reporte para eu decidir.
